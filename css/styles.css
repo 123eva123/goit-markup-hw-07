@@ -245,10 +245,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+.team-soc-link:hover,
+.team-soc-link:focus {
+background-color: var(--button-hover-color)
+}
 .team-soc-list {
   display: flex;
   justify-content: center;
   gap: 24px;
+}
+.team-soc-acon {
+  fill: var(--background-secondary-section)
 }
 .project-card {
   width: calc((100% - 48px) / 3);
