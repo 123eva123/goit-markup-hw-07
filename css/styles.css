@@ -6,6 +6,8 @@
   --background-secondary-section: #f4f4fd;
   --footer-text-coclor: #e7e9fc;
   --button-hover-color: #404bbf;
+  --footer-soc-bg-color: rgba(255, 255, 255, 0.1);
+  --footer-soc-bg-hover: #31d0aa;
 }
 
 p,
@@ -44,7 +46,7 @@ body {
   padding-top: 24px;
   border-bottom: 1px solid #e7e9fc;
 }
-
+.footer > .container,
 .header > .container {
   display: flex;
 }
@@ -104,11 +106,17 @@ body {
   letter-spacing: 0.02em;
 }
 .hero {
-  background-color: var(--title-text-color);
-  background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
+  max-width: 1440px;
+  margin: auto;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: var(--title-text-color);
   color: var(--white-color);
   text-align: center;
   padding-top: 188px;
@@ -138,6 +146,7 @@ body {
   height: 56px;
   border-radius: 4px;
   border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .hero .button:hover,
 .hero .button:focus {
@@ -185,7 +194,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+.advantages-pic {
+  width: 264px;
+  height: 112px;
+  background: var(--background-secondary-section);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .project-list .link-text {
   color: var(--primary-text-color);
 }
@@ -220,6 +237,9 @@ body {
 .button-list .button:focus {
   color: var(--white-color);
   background-color: var(--button-hover-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: none;
 }
 
 .project-list .link {
@@ -247,19 +267,27 @@ body {
 }
 .team-soc-link:hover,
 .team-soc-link:focus {
-background-color: var(--button-hover-color)
+  background-color: var(--button-hover-color);
 }
 .team-soc-list {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
-.team-soc-acon {
-  fill: var(--background-secondary-section)
+.team-soc-acon,
+.footer-soc-acon {
+  fill: var(--background-secondary-section);
 }
+
 .project-card {
   width: calc((100% - 48px) / 3);
 }
+.project-card:hover .card-text {
+  border: 0.5px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .project-card .card-text {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -292,8 +320,40 @@ background-color: var(--button-hover-color)
   border: 1px solid #e7e9fc;
   width: calc((100% - 48px) / 3);
 }
+
+.customers {
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+.customer-item {
+  width: calc((100%-120px) / 6);
+  height: 88px;
+}
+.customer-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+}
+.customer-icon {
+  fill: #afb1b8;
+}
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--button-hover-color);
+}
+.customer-link:hover .customer-icon {
+  fill: var(--button-hover-color);
+}
 .footer {
-  background-color: var(--primary-text-color);
+  background-color: var(--title-text-color);
   color: var(--footer-text-coclor);
   padding-top: 100px;
   padding-bottom: 100px;
@@ -308,8 +368,45 @@ background-color: var(--button-hover-color)
   margin-bottom: 16px;
 }
 .footer-text {
-  display: inline-block;
   max-width: 264px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+}
+.footer-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: var(--footer-soc-bg-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--footer-soc-bg-hover);
+}
+.footer-soc {
+  display: block;
+}
+
+.logo-box {
+  margin-right: 120px;
+}
+.soc-title {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white-color);
 }
