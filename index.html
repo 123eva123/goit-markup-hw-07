@@ -411,25 +411,34 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+        <form class="modal-form">
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <div class="input-wrap">
           <label for="user-name">Name</label>
-          <input name="user-name" id="user-name" />
+          <input name="user-name" id="user-name" class="modal-input"/>
+          <svg class="input-icon" wight="12" height="12"><use href="./images/icons.svg#icon-person-black"></use></svg>
         </div>
         <div class="input-wrap">
           <label for="user-phone">Phone</label>
-          <input name="user-phone" id="user-phone" />
+          <input name="user-phone" id="user-phone" class="modal-input" />
+          <svg class="input-icon" wight="13" height="13"><use href="./images/icons.svg#icon-phone-black"></use></svg>
         </div>
         <div class="input-wrap">
           <label for="user-email">Email</label>
-          <input name="user-email" id="user-email" />
+          <input name="user-email" id="user-email" class="modal-input" />
+          <svg class="input-icon" wight="15" height="12"><use href="./images/icons.svg#icon-email-black"></use></svg>
         </div>
         <div class="input-wrap">
           <label for="user-text">Comment</label>
-          <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Text input"></textarea>
+          <textarea
+            name="user-text"
+            id="user-text"
+            class="modal-comment"
+            placeholder="Text input"
+          ></textarea>
         </div>
         <button type="submit">Send</button>
-      
+      </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

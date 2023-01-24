@@ -522,3 +522,17 @@ body {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
+.modal-input {
+  width: 100%;
+}
+.modal-form {
+  padding: 24px;
+}
+.input-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.input-wrap {
+  position: relative;
+}
