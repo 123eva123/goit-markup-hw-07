@@ -64,7 +64,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
-  margin-right: 76px;
+  margin-right: 36px;
   transition: color var(--hover-transition);
 }
 .logo-web {
@@ -486,7 +486,6 @@ body {
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--hover-transition);
   padding: 72px 24px 24px 24px;
-
 }
 .modal-close {
   position: absolute;
@@ -533,10 +532,13 @@ body {
   background-color: transparent;
   padding-left: 38px;
   outline: none;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: #505052;
+  transition: border-color var(--hover-transition), fill var(--hover-transition);
 }
-/* .modal-form {
-  padding: 14px 24px 24px 24px;
-} */
+
 .input-icon {
   position: absolute;
   left: 16px;
@@ -573,6 +575,10 @@ body {
   outline: none;
   padding: 8px 16px;
   resize: none;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: #505052;
 }
 
 .modal-coment::placeholder {
@@ -609,8 +615,6 @@ body {
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
-
-
 }
 
 .check-text::before {
@@ -621,15 +625,18 @@ body {
   border-radius: 2px;
   margin-right: 9px;
   transition: background-color var(--hover-transition);
+}
 
+.privacy-link {
+  padding-left: 4px;
 }
 
 .input-check:checked + .check-text::before {
-background-color: var(--button-hover-color);
-border: none;
-background-image: url(../images/check.svg);
-background-repeat: no-repeat;
-background-position: center;
+  background-color: var(--button-hover-color);
+  border: none;
+  background-image: url(../images/check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .visually-hidden {
@@ -649,20 +656,19 @@ background-position: center;
   margin-bottom: 24px;
 }
 .button-send {
-width: 169px;
-height: 56px;
-background-color: var(--accent-color);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-border-radius: 4px;
-border: none;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: var(--white-color);
-font-family: inherit;
-transition: background-color var(--hover-transition);
-
+  width: 169px;
+  height: 56px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  font-family: inherit;
+  transition: background-color var(--hover-transition);
 }
 
 .button-cont {
@@ -671,7 +677,9 @@ transition: background-color var(--hover-transition);
 }
 
 .button-send:hover,
-.button-send:focus {
+.button-send:focus,
+.subscribe-button:hover,
+.subscribe-button:focus {
   background-color: var(--button-hover-color);
 }
 
@@ -680,25 +688,50 @@ transition: background-color var(--hover-transition);
   gap: 24px;
 }
 .subscribe-input {
-  Width: 264px;
-Height: 40px;
-border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background-color: transparent;
+  width: 264px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--background-secondary-section);
 }
 .subscribe-button {
-  Width: 165px;
-Height: 40px;
-padding: 8px 24px;
-gap: 16px;
-border: none;
-background-color: var(--accent-color);
-border-radius: 4px;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: var(--white-color);
-font-family: inherit;
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+  border: none;
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-color);
+  font-family: inherit;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color var(--hover-transition);
+}
+.button-cont {
+  position: relative;
+}
+.subscribe-icon {
+  position: absolute;
+  right: 12px;
+  transform: translateX(-50%);
+  fill: #ffffff;
+}
+
+.subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.6);
 }
