@@ -629,6 +629,7 @@ body {
 
 .privacy-link {
   padding-left: 4px;
+  color: var(--accent-color);
 }
 
 .input-check:checked + .check-text::before {
