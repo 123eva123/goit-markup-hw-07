@@ -1,0 +1,25 @@
+@media screen and (min-width: 768px) {
+    .container {
+      width: 768px;}
+      .team-card {
+        width: calc((100% - 24px) / 2); 
+      }
+      .team-list {
+        column-gap: 24px;
+        row-gap: 64px;
+      }
+      .section-secondary {
+        padding-bottom: 104px;
+      }
+      .section-secondary > .container,
+      .customers > .container {
+        width: 582px;
+      }
+      .customers-list {
+        gap: 24px;}
+  
+        .customer-item {
+          width: calc((100% - 48px) / 3);
+        }
+  }
+  

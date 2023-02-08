@@ -229,6 +229,9 @@ body {
   text-align: center;
   padding-bottom: 128px;
 }
+.section-secondary > .container {
+  width: 294px;
+}
 
 .button-list .button {
   color: var(--accent-color);
@@ -380,7 +383,7 @@ body {
   row-gap: 72px;
 }
 .customer-item {
-  width: calc((100% - 32px) / 2);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customer-link {
@@ -740,48 +743,7 @@ body {
 }
 
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 428px;
-  }
-}
 
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;}
-    .team-card {
-      width: calc((100% - 24px) / 2); 
-    }
-    .team-list {
-      column-gap: 24px;
-      row-gap: 64px;
-    }
-    .section-secondary {
-      padding-bottom: 104px;
-    }
-    .customers-list {
-      gap: 24px;
-}
-}
 
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1158px;}
-    .team-list {
-      gap: 24px;
-    }
-    
-    .team-card {
-      width: calc((100% - 72px) / 4);
-    }
-.section-padding {
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
-.customers-list {
-  gap: 24px;
-}
-.customer-item {
-  width: calc((100% - 120px) / 6);
-}
-}
+
+
