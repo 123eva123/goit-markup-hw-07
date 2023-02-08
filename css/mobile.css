@@ -3,3 +3,14 @@
       width: 428px;
     }
   }
+  .doing-section {
+    display: none;
+  }
+  .advantages-pic {
+    display: none;
+  }
+
+  .site-nav.list,
+.address {
+  display: none;
+}

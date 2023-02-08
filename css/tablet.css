@@ -1,9 +1,72 @@
 @media screen and (min-width: 768px) {
     .container {
       width: 768px;}
+
+      .site-nav.list,
+      .address {
+        display: flex;
+      }
+      .mob-menu,
+      .menu-open {
+        display: none;
+      }
+      
+
+
+      .hero {
+       
+        padding-top: 112px;
+        padding-bottom: 108px;
+        background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-tab.jpg);
+      }
+      .hero .hero-title {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        margin-bottom: 40px;
+        max-width: 496px;}
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          .hero {
+            background-image: linear-gradient(
+              rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)
+            ),
+            url(../images/people-office-tab-2x.jpg); 
+          }
+        }
+
+
+        .advantages-list {
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          gap: 24px;}
+          .advantages-padding {
+            padding-top: 120px;
+          }
+
+          .advantages-list .title {
+            font-weight: 700;
+          font-size: 36px;
+          line-height: 1.11;
+          letter-spacing: 0.02em;
+          color: var(--title-text-color);
+          margin-bottom: 8px;
+          text-align:left
+          }
+
+
       .team-card {
         width: calc((100% - 24px) / 2); 
       }
+     
       .team-list {
         column-gap: 24px;
         row-gap: 64px;
