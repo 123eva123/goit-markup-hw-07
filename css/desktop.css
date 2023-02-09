@@ -2,6 +2,13 @@
   .container {
     width: 1158px;
   }
+  .header {
+    padding-bottom: 24px;
+  }
+  .site-nav {
+    gap: 40px;
+  }
+
   .team-list {
     gap: 24px;
   }
@@ -14,6 +21,10 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/people-office.jpg);
+  }
+  .address {
+    display: flex;
+    gap: 40px;
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -39,6 +50,12 @@
   .doing-section {
     display: inline;
   }
+  .advantages-padding {
+    padding-bottom: 0;
+  }
+  .advantages-list {
+    flex-wrap: nowrap;
+  }
 
   .advantages-list .title,
   .team-list .title,
@@ -55,12 +72,25 @@
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  .subscribe-form {
+    margin-right: 0;
+  }
 
   .footer > .container {
     flex-wrap: nowrap;
   }
   .footer-form {
     flex-wrap: nowrap;
+  }
+  .logo-box {
+    margin-right: 96px;
+  }
+  .footer-soc {
+    margin-right: 56px;
+  }
+
+  .footer-text {
+    width: 264px;
   }
 
   .advantages-pic {
@@ -84,5 +114,10 @@
   }
   .customer-item {
     width: calc((100% - 120px) / 6);
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }

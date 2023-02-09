@@ -1,16 +1,16 @@
 @media screen and (min-width: 480px) {
-    .container {
-      width: 428px;
-    }
+  .container {
+    width: 428px;
   }
-  .doing-section {
-    display: none;
-  }
-  .advantages-pic {
-    display: none;
-  }
+}
+.doing-section {
+  display: none;
+}
+.advantages-pic {
+  display: none;
+}
 
-  .site-nav.list,
+.site-nav.list,
 .address {
   display: none;
 }
