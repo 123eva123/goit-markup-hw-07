@@ -70,9 +70,6 @@
     justify-content: center;
     gap: 24px;
   }
-  .advantages-padding {
-    padding-top: 120px;
-  }
 
   .advantages-list .title {
     font-weight: 700;
@@ -134,7 +131,7 @@
     text-align: left;
   }
   .logo-box {
-    margin-bottom: 48px;
+    margin-bottom: 0;
   }
   .logo-box > .logo {
     text-align: left;
